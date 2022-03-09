@@ -1,0 +1,9 @@
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\bin\Debug\netstandard2.1\VideoGameDataAccessLibrary.deps.json
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\bin\Debug\netstandard2.1\VideoGameDataAccessLibrary.dll
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\bin\Debug\netstandard2.1\VideoGameDataAccessLibrary.pdb
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.AssemblyInfo.cs
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.dll
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.pdb
+C:\Users\mikha\source\repos\FinleyM_VGL\VideoGameDataAccessLibrary\obj\Debug\netstandard2.1\VideoGameDataAccessLibrary.csprojAssemblyReference.cache

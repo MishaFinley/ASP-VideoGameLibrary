@@ -1,0 +1,18 @@
+﻿@model VideoGame;
+<h1 class="display-1">Add Game</h1>
+<form method="post" asp-action="AddGame">
+    <input asp-for="@Model.Title" placeholder="Title" />
+    <br />
+    <input asp-for="@Model.Platform" placeholder="Platform" />
+    <br />
+    <input asp-for="@Model.Genre" placeholder="Genre" />
+    <br />
+    <input asp-for="@Model.ESRB" placeholder="ESRB" />
+    <br />
+    <input asp-for="@Model.Year" placeholder="Year" />
+    <br />
+    <input asp-for="@Model.Image" placeholder="Image URL" />
+    <br />
+
+    <input type="submit" value="Submit" />
+</form>

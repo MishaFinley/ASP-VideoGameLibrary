@@ -1,0 +1,44 @@
+﻿@page
+@model FinleyM_VGL.Areas.Admin.Pages.Roles.PremiumUser.Index1Model
+@{
+}
+
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Watch Video Game Trailers!</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 text-right">
+        <a asp-page="/Roles/PremiumUser/Index">Add Trailers</a>
+
+    </div>
+
+</div>
+@if (Model.Games != null && Model.Games.Count() > 0)
+{
+    <div class="row">
+        <div>
+            @foreach (var game in Model.Games)
+            {
+                <div class="col-sm-2">
+                    <img src="~/@game.Image">
+                </div>
+                <div class="col-sm">
+                    <h3>@game.Title</h3>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        <a href="@game.VideoURL">Trailer</a>
+                    </h3>
+
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <h1>No roles available</h1>
+}
+

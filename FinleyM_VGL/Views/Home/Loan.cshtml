@@ -1,0 +1,10 @@
+﻿@model VideoGame;
+
+<h1 class="display-1">Video Game Loan</h1>
+<p>@Model.Title</p>
+<form asp-action="Loan" method="post">
+    <input type="hidden" id="ID" name="ID" value=@Model.Id />
+    <input asp-for="LoanedTo" placeholder="Full Name" />
+    <input asp-for="LoanDate"/>
+    <input type="submit" value="Submit"/>
+</form>

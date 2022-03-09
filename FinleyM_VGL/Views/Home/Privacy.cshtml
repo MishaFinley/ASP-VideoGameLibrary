@@ -1,0 +1,82 @@
+﻿@model IEnumerable<VideoGame>
+
+
+@if (Model == null)
+{
+    <h1>No video games available</h1>
+
+}
+else
+{
+    <h1 class="display-1">Video Games</h1>
+    <form asp-action="Search" method="post">
+        <input name="key" placeholder="Title"/>
+        <input name="genre" placeholder="Genre"/>
+        <input name="platform" placeholder="Platform" />
+        <input name="esrb" placeholder="ESRB" />
+        <input type="submit" />
+    </form>
+    <br />
+    <div class="col-sm-2">
+        <a href="~/Add" class="list-group-item list-group-item-action">Add Game</a>
+    </div>
+    foreach (var game in Model)
+    {
+        @*<partial name="_LoanPartialView.cshtml" for="@game" />*@
+<div class="row">
+    <div class="col-sm-2">
+        <img src="~/@game.Image">
+    </div>
+    <div class="col-sm">
+        <h3>@game.Title</h3>
+    </div>
+    <div class="col-sm">
+        <h3>@game.Platform</h3>
+    </div>
+    <div class="col-sm">
+        <h3>@game.Genre</h3>
+    </div>
+    <div class="col-sm-1">
+        <h3>@game.ESRB</h3>
+    </div>
+    <div class="col-sm-1">
+        <h3>@game.Year</h3>
+    </div>
+    @if (game.LoanedTo == null)
+    {
+        <div class="col-sm">
+            <a href="Loan/@game.Id" class="list-group-item list-group-item-action">Loan</a>
+        </div>
+        <div class="col-sm">
+            <a href="~/Edit/@game.Id" class="list-group-item list-group-item-action">Edit</a>
+            <a href="~/Remove/@game.Id" class="list-group-item list-group-item-action">Remove</a>
+        </div>
+        <div class="col-sm">
+        </div>
+    }
+    else
+    {
+        <div class="col-sm">
+            <a href="~/Return/@game.Id" class="list-group-item list-group-item-action">Return</a>
+        </div>
+        <div class="col-sm">
+            <a href="~/Edit/@game.Id" class="list-group-item list-group-item-action">Edit</a>
+            <a href="~/Remove/@game.Id" class="list-group-item list-group-item-action">Remove</a>
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+            <span>Loaned by: @game.LoanedTo</span>
+            <span>Loaned on: @game.LoanDate</span>
+        </div>
+    }
+    @*<div class="col-sm">
+            <a href="~/Remove/@game.ID" class="list-group-item list-group-item-action">Remove</a>
+        </div>*@
+
+</div>
+    }
+}
+<!--@*<button  class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Loan
+                </button>*@-->

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinleyM_VGL", "FinleyM_VGL\FinleyM_VGL.csproj", "{36EBB2C5-695A-4389-8B19-CCB8ABD127A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoGameDataAccessLibrary", "VideoGameDataAccessLibrary\VideoGameDataAccessLibrary.csproj", "{466AC324-1F99-4F3B-8A7E-72DC06AFC1B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36EBB2C5-695A-4389-8B19-CCB8ABD127A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EBB2C5-695A-4389-8B19-CCB8ABD127A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EBB2C5-695A-4389-8B19-CCB8ABD127A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EBB2C5-695A-4389-8B19-CCB8ABD127A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466AC324-1F99-4F3B-8A7E-72DC06AFC1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466AC324-1F99-4F3B-8A7E-72DC06AFC1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466AC324-1F99-4F3B-8A7E-72DC06AFC1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466AC324-1F99-4F3B-8A7E-72DC06AFC1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5B831CA-4DA9-4A68-A632-2B9D327E3E0E}
+	EndGlobalSection
+EndGlobal
